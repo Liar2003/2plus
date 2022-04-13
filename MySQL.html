@@ -17,7 +17,7 @@
          })
 
          db.transaction(function (tx) { 
-            tx.executeSql('SELECT * FROM LOGS', [], function (tx, results) { 
+            tx.executeSql('SELECT * FROM LOG', [], function (tx, results) { 
                var len = results.rows.length, i; 
                msg = "<p>Found rows: " + len + "</p>"; 
                document.querySelector('#status').innerHTML +=  msg; 
